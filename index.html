@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Specification v0.1</title>
+    <meta http-equiv='Content-Type' content='text/html;charset=utf-8'/>
+    <!--
+      === NOTA BENE ===
+      For the three scripts below, if your spec resides on dev.w3 you can check them
+      out in the same tree and use relative links so that they'll work offline,
+     -->
+    <script src='https://www.w3.org/Tools/respec/respec-w3c-common' class='remove'></script>
+    <script src="./common.js" class="remove"></script>
+    <script type="text/javascript" class="remove">
+      var respecConfig = {
+        // specification status (e.g., WD, LCWD, NOTE, etc.). If in doubt use ED.
+        specStatus: "unofficial",
+
+        // the specification's short name, as in http://www.w3.org/TR/short-name/
+        shortName: "spec-short-name",
+
+        // subtitle for the spec
+        subtitle: "The Subtitle for the Spec",
+
+        // if you wish the publication date to be other than today, set this
+        //publishDate: "",
+        //crEnd: "",
+        //prEnd: "",
+        //implementationReportURI: "",
+
+        // if there is a previously published draft, uncomment this and set its YYYY-MM-DD date
+        // and its maturity status
+        // previousPublishDate:  "1977-03-15",
+        // previousMaturity:  "WD",
+
+        // extend the bibliography entries
+        localBiblio: ccg.localBiblio,
+        doJsonLd: true,
+
+        github: "https://github.com/digitalbazaar/<spec>/",
+        includePermalinks: false,
+
+        // if there a publicly available Editor's Draft, this is the link
+        edDraftURI: "https://digitalbazaar.github.io/<spec>/",
+
+        // if this is a LCWD, uncomment and set the end of its review period
+        // lcEnd: "2009-08-05",
+
+        // editors, add as many as you like
+        // only "name" is required
+        editors: [
+          // { name: "Manu Sporny", url: "https://www.linkedin.com/in/manusporny/",
+          //   company: "Digital Bazaar", companyURL: "https://digitalbazaar.com/"},
+          // { name: "Dave Longley", url: "https://github.com/dlongley",
+          //   company: "Digital Bazaar", companyURL: "https://digitalbazaar.com/"}
+        ],
+        // authors, add as many as you like.
+        // This is optional, uncomment if you have authors as well as editors.
+        // only "name" is required. Same format as editors.
+        authors:
+        [
+          // { name: "Dave Longley", url: "https://digitalbazaar.com/",
+          //   company: "Digital Bazaar", companyURL: "https://digitalbazaar.com/"},
+          // { name: "Manu Sporny", url: "https://digitalbazaar.com/",
+          //   company: "Digital Bazaar", companyURL: "https://digitalbazaar.com/" }
+        ],
+        // name of the WG
+        wg:           "W3C Credentials Community Group",
+
+        // URI of the public WG page
+        wgURI:        "https://digitalbazaar.com/",
+
+        // name (with the @w3c.org) of the public mailing to which comments are due
+        wgPublicList: "public-credentials",
+
+        // URI of the patent status for this WG, for Rec-track documents
+        // !!!! IMPORTANT !!!!
+        // This is important for Rec-track documents, do not copy a patent URI from a random
+        // document unless you know what you're doing. If in doubt ask your friendly neighborhood
+        // Team Contact.
+        wgPatentURI:  "https://www.w3.org/2004/01/pp-impl/98922/status",
+        maxTocLevel: 2,
+        inlineCSS: true
+      };
+    </script>
+    <style>
+pre .highlight {
+  font-weight: bold;
+  color: Green;
+}
+pre .subject {
+  font-weight: bold;
+  color: RoyalBlue;
+}
+pre .property {
+  font-weight: bold;
+  color: DarkGoldenrod;
+}
+pre .comment {
+  font-weight: bold;
+  color: SteelBlue;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.color-text {
+  font-weight: bold;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+    </style>
+  </head>
+  <body>
+    <section id='abstract'>
+      <p>
+Decentralized Identifiers (DIDs) are a new type of identifier for verifiable,
+decentralized digital identity. These new identifiers are designed to enable the
+controller of a DID to prove control over it and to be implemented independently
+of any centralized registry, identity provider, or certificate authority.
+These sorts of identifiers often utilize a heavy-weight registry, such as ones
+utilizing Decentralized Ledger Technologies (DLT), to create, read, update,
+and deactivate DIDs. This specification describes a non-registry based DID
+Method based on expanding a cryptographic public key into a DID Document. This
+approach provides the simplest possible implementation of a DID Method that
+is able to achieve many, but not all, of the benefits of utilizing DIDs.
+      </p>
+    </section>
+
+    <section id='sotd'>
+
+      <p>
+Portions of the work on this specification have been funded by the
+United States Department of Homeland Security's Science and Technology
+Directorate under contract HSHQDC-17-C-00019. The content of this specification
+does not necessarily reflect the position or the policy of the U.S. Government
+and no official endorsement should be inferred.
+      </p>
+
+    </section>
+
+    <section class="informative">
+      <h2>Introduction</h2>
+
+      <p>
+Decentralized Identifiers (DIDs) [[DID-CORE]] are a new type of identifier for
+verifiable, decentralized digital identity. ...
+      </p>
+      <p>
+The rest of this document outlines the syntax for the ....
+      </p>
+
+      </section>
+
+    </section>
+
+    <section class="normative">
+      <h2 id="format">Section 1</h2>
+
+      <pre class="example" title="A simple example">
+Example goes here
+      </pre>
+
+    </section>
+
+    <section class="informative">
+      <h2>Security and Privacy Considerations</h2>
+
+      <p>
+There are a number of security and privacy considerations that implementers
+will want to take into consideration when implementing this specification.
+      </p>
+
+      <section class="informative">
+        <h3>Consideration</h3>
+
+        <p>
+TBD
+        </p>
+      </section>
+
+    </section>
+
+  </section>
+
+  <section class="appendix informative">
+    <h2>Acknowledgements</h2>
+
+    <p>
+The Working Group would like to thank the following individuals for reviewing
+and providing feedback on the specification (in alphabetical order):
+    </p>
+
+    <p>
+TBD...
+    </p>
+  </section>
+  </body>
+</html>
